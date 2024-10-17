@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!--* Font Awesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!--! Bootstrap -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!--! Main StyleSheet  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--! Media  -->
+    <link rel="stylesheet" href="./CSS/Media.css">
+    <!--* Fonts Google  -->
+    <!--& Font third party  -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-Weather">
+    <!--TODO: Section home -->
+    <div id="loadingg">
+        <section style="min-height: 100vh;">
+            <div class="site-content">
+                <div class="site-header">
+                    <div class="container">
+                        <nav class="navbar z-3 top-0 start-0 end-0 position-absolute navbar navbar-expand-md py-4half px-0 px-lg-5 "
+                            id="navbar-Weather">
+                            <div class="container-fluid p-4">
+                                <a class="branding" href="./index.htm">
+                                    <img src="./images/logo.png" alt="" class="logo">
+                                    <div class="logo-type">
+                                        <h1 class="site-title">Weather</h1>
+                                        <small class="site-description">tagline goes here</small>
+                                    </div>
+                                </a>
+
+                                <button class="navbar-toggler shadow-none ms-auto border-0" id="btnCollapse"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="text-white fs-3"><i class="fa-solid fa-bars"></i></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="ul1 text-white navbar-nav ms-auto mt-2 mb-2 mb-lg-0 px-4 py-2 py-lg-0 gap-3 gap-md-2 fs-7 d-flex justify-content-center align-items-center "
+                                        style="background-color: #1e202b;">
+                                        <li class="nav-item ">
+                                            <a class="a10 a11 Home w-fit nav-link cursor-pointer p-0"
+                                                aria-current="page" href="#loadingg">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="about12 a10 w-fit nav-link p-0 cursor-pointer"
+                                                href="./news.htm">News
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="a10 w-fit nav-link p-0 cursor-pointer" target="_blank"
+                                                id="btnYourLocation">Your city
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="a10 w-fit nav-link p-0 cursor-pointer">Phootos
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="a10 w-fit nav-link p-0 cursor-pointer" href="./contact.htm">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="hero" data-bg-image="images/banner.png"
+                    style="background-image: url(&quot;images/banner.png&quot;);">
+                    <div class="container">
+                        <form class="find-location">
+                            <div class="position-relative">
+                                <input type="text" placeholder="Find your location..." id="search" list="searchHelp"
+                                    autofocus name="Country:" autocomplete="off">
+                                <input type="button" value="Find" id="submit">
+                            </div>
+                            <div class="bg-white w-75 rounded-1 mx-auto d-flex flex-column position-absolute z-3"
+                                id="searchHelp" style="translate: 15% 0% ;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="forecast-table mt-5 position-relative">
+                    <div class="container">
+                        <div class="forecast-container" id="forecast">
+                            <div class="today forecast" id="currentWeather">
+
+                            </div>
+                            <div class="forecast" id="day2">
+
+                            </div>
+                            <div class="forecast" id="day3">
+
+                            </div>
+                        </div>
+        </section>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Enter your email to subscribe..." autocomplete="off"
+                                name="Email:">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+
+                <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                </p>
+            </div>
+        </footer> <!-- .site-footer -->
+    </div>
+
+
+
+
+
+    <!--! Script Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--! My main script  -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

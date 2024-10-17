@@ -1,0 +1,23 @@
+@media (min-width: 150px) {
+    .cardNews{width: 100%;}
+  }
+@media (min-width: 576px) {
+    .cardNews{width: 48%;}
+  }
+
+@media (min-width: 768px) {#navbarSupportedContent ul{
+    background-color:transparent !important;    
+}
+.cardNews{width: 48%;}
+}
+#navbarSupportedContent ul{
+    color: white !important;
+}        
+ 
+    
+ 
+@media (min-width: 992px) { 
+    @media (min-width: 576px) {
+        .cardNews{width: 32%;}
+      }
+ }
